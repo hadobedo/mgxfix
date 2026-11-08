@@ -1,0 +1,13 @@
+#!/bin/sh
+# Remove the earlier multi-process builds (diagnostic iterations).
+set +e
+for base in /var/jb ""; do
+    rm -f "$base/Library/MobileSubstrate/DynamicLibraries/MGXFixBackboard.dylib"
+    rm -f "$base/Library/MobileSubstrate/DynamicLibraries/MGXFixBackboard.plist"
+    rm -f "$base/Library/MobileSubstrate/DynamicLibraries/MGXFixGameController.dylib"
+    rm -f "$base/Library/MobileSubstrate/DynamicLibraries/MGXFixGameController.plist"
+    rm -f "$base/Library/LaunchDaemons/com.nicksworks.mgxfixd.plist"
+    rm -f "$base/usr/bin/MGXFixDaemon"
+    rm -f "$base/Library/libSandy/MGXFix.plist"
+done
+exit 0

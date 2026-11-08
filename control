@@ -1,0 +1,13 @@
+Package: com.nicksworks.mgxfix
+Name: MGXFix
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Description: Makes the 8BitDo Ultimate MGX work as a normal game controller. iOS already publishes the pad as a BLE HID device and matches it in the GameController database, but skips its mapping on a personality version check; this patches that in memory.
+Maintainer: Nick's Works <hadobedo@gmail.com>
+Author: Nick's Works (Hadobedo)
+Homepage: https://github.com/hadobedo/mgxfix
+Icon: https://hadobedo.github.io/repo/assets/mgxfix.png
+SileoDepiction: https://hadobedo.github.io/repo/depictions/com.nicksworks.mgxfix.json
+Depiction: https://hadobedo.github.io/repo/depictions/com.nicksworks.mgxfix.html
+Section: Tweaks
+Depends: ellekit
